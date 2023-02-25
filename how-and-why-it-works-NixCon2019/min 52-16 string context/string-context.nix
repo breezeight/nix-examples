@@ -7,7 +7,8 @@ let
     };
 
     slow = pkgs.runCommand "slow" {} ''
-        sleep 10
+        echo "slow will sleep for 60 seconds"
+        sleep 60
         touch $out
     '';
 in 
